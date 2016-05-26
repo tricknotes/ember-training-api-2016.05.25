@@ -6,6 +6,8 @@ gem 'sqlite3'
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
+gem 'active_model_serializers'
+gem 'json_api_params', github: 'tricknotes/json_api_params', branch: 'rails-5'
 
 gem 'jquery-rails'
 

@@ -14,4 +14,4 @@
 //= require jquery_ujs
 //= require vendor
 //= require ember-training
-//= require_tree .
+//= require ./csrf_token_support
