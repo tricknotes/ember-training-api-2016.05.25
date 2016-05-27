@@ -23,6 +23,14 @@ chdir APP_ROOT do
   #   cp 'config/database.yml.sample', 'config/database.yml'
   # end
 
+  system! 'git submodule update --init'
+
+  chdir 'frontend' do
+    system! 'npm install'
+    system! 'bower install'
+    system! 'npm build'
+  end
+
   puts "\n== Preparing database =="
   system! 'bin/rails db:setup'
 
